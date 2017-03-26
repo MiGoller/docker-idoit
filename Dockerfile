@@ -66,7 +66,7 @@ RUN cd ${idoit_home} && ./idoit-rights.sh
 RUN chown www-data:www-data -R ${idoit_home}
 RUN find ${idoit_home} -type d -name \* -exec chmod 775 {} \;
 RUN find ${idoit_home} -type f -exec chmod 664 {} \;
-RUN chmod 774 ${idoit_home}\controller ${idoit_home}\tenants ${idoit_home}\import ${idoit_home}\updatecheck ${idoit_home}\*.sh
+RUN chmod 774 ${idoit_home}/controller ${idoit_home}/tenants ${idoit_home}/import ${idoit_home}/updatecheck ${idoit_home}/*.sh
 
 # apache2 configuration for virtual host on port 80
 # includes the alias definition for '/i-doit'
