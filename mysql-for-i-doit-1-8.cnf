@@ -1,0 +1,9 @@
+#
+# mysqld configuration options required for i-doit 1.8
+#
+[mysqld]
+innodb_buffer_pool_size   = 1024M
+max_allowed_packet 		  = 64M
+query_cache_limit         = 5M
+# disable MySQL strict mode
+sql-mode                  = ""
